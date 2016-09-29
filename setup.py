@@ -21,9 +21,9 @@ setup(
     description='',
     entry_points={
         'console_scripts': [
-            'protoext = protoext.gen.protoext',
-            'protoext_python = protoext.gen.protoext_python',
-            'protoext_erlang = protoext.gen.protoext_erlang',
+            'protoc-gen-protoext = protoext.gen:protoext',
+            'protoc-gen-protoext-python = protoext.gen:protoext_python',
+            'protoc-gen-protoext-erlang = protoext.gen:protoext_erlang',
             ]
         }
 )

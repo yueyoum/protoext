@@ -24,7 +24,7 @@ def make_response_file(proto_files, response_file):
         record_lines.extend(t.record_lines)
 
     response_file.content = '{0}{1}\n\n{2}'.format(
-        HEADER % datetime.datetime.now().isoformat(),
+        HEADER.format(datetime.datetime.now().isoformat()),
         '\n'.join(define_lines),
         '\n'.join(record_lines)
     )
@@ -104,7 +104,7 @@ class ErlangTemplate(Template):
 
 #################
 
-HEADER = """%% Auto generate at %s.
+HEADER = """%% Auto generate at {0}.
 %% By proto-ext
 %% DO NOT EDIT
 

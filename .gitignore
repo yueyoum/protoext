@@ -1,5 +1,9 @@
 *.pyc
 *.swp
 *.bak
+
 .idea
+dist
+build
+*.egg-info
 

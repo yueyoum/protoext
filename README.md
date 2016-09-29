@@ -7,7 +7,7 @@ compile protobuf to erlang ext
 ## Usage
 
 ```
-protoc --plugin=protoc-gen-ext=CMD --ext_out=<out> <protobuf files>
+protoc --CMD_out=<out> <protobuf files>
 ```
 
 CMD:
