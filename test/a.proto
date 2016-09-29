@@ -1,0 +1,33 @@
+syntax = "proto3";
+package MyPkg;
+
+import "b.proto";
+
+enum Gender {
+    F = 0;
+    M = 1;
+}
+
+message Person {
+    message Inner {
+        int32 id = 1;
+    }
+
+    enum SomeType {
+        CASE1 = 0;
+        CASE2 = 1;
+    }
+
+    int32 id = 1;
+    string name = 2;
+    repeated int32 tags = 3;
+
+    SomeType tp = 4;
+    repeated Inner inns = 5;
+}
+
+message Bag {
+    repeated MyPkg.BB.BB2 bb2  =1;
+    
+}
+

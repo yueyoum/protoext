@@ -1,0 +1,22 @@
+syntax = "proto3";
+package MyPkg.BB;
+
+message BB1 {
+    message BB1_INN {
+        int32 id = 1;
+    }
+
+    int32 id = 1;
+    BB1_INN inn = 2;
+}
+
+message BB2 {
+    enum Type {
+        T1 = 0;
+        T2 = 1;
+    }
+
+    int64 xxx = 1;
+    int32 amount = 2;
+    Type tp = 3;
+}
